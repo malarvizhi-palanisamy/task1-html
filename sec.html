@@ -1,0 +1,164 @@
+<head>
+    <style>
+      
+    header {
+      background-color:cadetblue;
+      padding:30px;
+    }
+    img{
+        border-radius: 120px;
+        width: 150px;
+        height:150px;
+    }
+    nav{
+     background-color: rgb(173, 233, 233);
+        body{
+            background-color:darkgrey;
+        }
+    article {
+      background-color: rgb(225, 161, 238);
+        body{
+            background-color:darkgrey;
+        }
+}
+footer {
+background-color: rgb(73, 204, 132);
+  padding: 10px;
+left:0px;
+ 
+}
+            
+    }
+    
+    </style>
+    </head>
+    <body>
+    <header>
+            <img src="profile.jpg">
+            <h2>Malarvizhipalanisamy</h2>
+            <h3>Student at KPR IEn</h3>
+           <h3>Coimbatore, Tamil Nadu, India </h3> 
+           <form >
+                <select>
+                  <option value="skills">skills</option>
+                  <option value="Achievements">Achievements</option>
+                  <option value="Experience">Experience</option>
+                  <option value="accomplishment">accomplishment</option>
+                </select>
+            </form>     
+    </header>
+    <nav>
+      <h1>EDUCATIONAL DETAILS</h1>
+      <table style="width:70%" Border="5">
+        <tr>
+            <thead>
+            <th>COURSE</th>
+            <th>INSTITUTE</th>
+            <th>YEAR OF PASSING</th>
+            <th>CGPA/%</th>
+        </thead>
+            </tr>
+           
+    <tr>
+      <td>BE</td>
+        <td>KPR IET</td>
+        <td>2019</td>
+        <td>7.39</td>
+    </tr>
+    <tr>
+        <td>HSC</td>
+       <td>st.Thomas</td>
+        <td>2015</td>
+        <td>82.25%</td>
+    </tr>
+    <tr>
+        <td>SSLC</td>
+        <td>st.Thomas</td>
+        <td>2013</td>
+        <td>91.8%</td>
+    </tr>
+    </table>
+    <h2>TOOLS</h2>
+    <table style="width:30%" Border="5">
+        <tr>
+            <td>Android studio</td>
+<td>Eclipse</td>
+</tr> 
+<tr>
+    <td>MP lab</td>
+    <td>Net beans</td>
+</tr>
+<tr>
+    <td>HeidiSQL</td>
+    <td>Arduino IDE</td>
+</tr>
+<tr>
+    <td>Proteus</td>
+    <td>Pickit2</td>
+</tr>
+
+    </table>
+    <h2>COMPUTER KNOWLEDGE</h2>
+    <table>
+        <tr>
+       <th>PROGRAMMING LANGUAGES</li></ol></th>
+        <td><ul><li>C</li><li>C++</li><li>Python</li><li>Core Java</li></ul></td>
+    </tr>
+       <tr><th align="left"> FRONTEND</th>
+        <td><ul><li>JSP</li><li>JSF</li><li>HTML</li><li>XML</li><li>CSS</li></ul></td>
+    </tr> 
+       <tr><th align="left">BACKEND</th>
+        <td><ul><li>JAVA</li><li>MySQL</li><li>Python</li></ul></td>
+    </tr> 
+      <tr> <th align="left">OPERATING SYSTEMS</th>
+        <td><ul><li>Linux</li><li>Windows</li></ul></td>
+    </tr> 
+      <tr><th align="left">HARDWARE LANGUAGES</th>
+        <td><ul><li>Assembly Languages</li><li>Embedded C</li></ul></td>
+    </tr>  
+    </table>
+    </nav>
+    <nav>
+        <h1><center>EXPERIENCE</center></h1>
+        <h2>Internship at Sai Incubation Center</h2>
+        <p>JULY 2018 - DEC 2018 (6months)</p>
+        <h2>Internship at Gateway Software Solutions</h2>
+        <p>NOVEMBER 2017 (15days)</p>
+    </nav>
+   <selection>
+     <article>
+       <h2>self introduction</h2>
+        <video width="320" height="240" controls>
+            <source src="fv.mp4" type="video/mp4">
+          </video>
+          <a href="/home/malar/Desktop/programs/2. Resume-Malarvizhi.P.docx">RESUME</a>
+     </article>
+   </selection>
+        <footer>
+          <h2>
+            LIVE LOCATION
+          </h2>
+            <button onclick="getLocation()">location</button>
+
+            <p id="demo"></p>
+            
+            <script>
+            var x = document.getElementById("demo");
+            
+            function getLocation() {
+              if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(showPosition);
+              } else { 
+                x.innerHTML = "Geolocation is not supported by this browser.";
+              }
+            }
+            
+            function showPosition(position) {
+              x.innerHTML = "Latitude: " + position.coords.latitude + 
+              "<br>Longitude: " + position.coords.longitude;
+            }
+            </script>
+        </footer>
+  
+    </body>
+    </html>
