@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+.imgbg {
+  background-image: url("profile.jpg");
+  min-height: 1000px;
+  background-position: center;
+  background-size: cover;
+  }
+.form {
+  position: absolute;
+  left:300px;
+  margin: 200px;
+  max-width: 400px;
+  padding: 20px;
+  background-color: white;
+}
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+.btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  width: 50%;
+  opacity: 0.9;
+}
+.btn:hover {
+  opacity: 1;
+}
+</style>
+</head>
+<body>
+<div class="imgbg">
+  <form action="sec.html" class="form">
+     <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+<button type="submit" class="btn">Login</button>
+  </form>
+</div>
+</body>
+</html>
