@@ -15,14 +15,15 @@
         body{
             background-color:darkgrey;
         }
+        }
     article {
-      background-color: rgb(225, 161, 238);
+      background-color: rgb(234, 189, 243);
         body{
             background-color:darkgrey;
         }
 }
 footer {
-background-color: rgb(73, 204, 132);
+background-color: rgb(96, 231, 157);
   padding: 10px;
 left:0px;
  
@@ -135,29 +136,10 @@ left:0px;
      </article>
    </selection>
         <footer>
-          <h2>
-            LIVE LOCATION
-          </h2>
-            <button onclick="getLocation()">location</button>
+          
+          
+            <a href="third.html"><button>contact</button></a>
 
-            <p id="demo"></p>
-            
-            <script>
-            var x = document.getElementById("demo");
-            
-            function getLocation() {
-              if (navigator.geolocation) {
-                navigator.geolocation.getCurrentPosition(showPosition);
-              } else { 
-                x.innerHTML = "Geolocation is not supported by this browser.";
-              }
-            }
-            
-            function showPosition(position) {
-              x.innerHTML = "Latitude: " + position.coords.latitude + 
-              "<br>Longitude: " + position.coords.longitude;
-            }
-            </script>
         </footer>
   
     </body>
