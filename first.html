@@ -13,8 +13,8 @@
   }
 .form {
   position: absolute;
-  left:300px;
-  margin: 200px;
+  left:400px;
+  margin: 20px;
   max-width: 400px;
   padding: 20px;
   background-color: white;
@@ -36,17 +36,27 @@ input[type=text], input[type=password] {
 .btn:hover {
   opacity: 1;
 }
+img{
+        border-radius: 120px;
+        width: 150px;
+        height:150px;
+        
+    }
 </style>
 </head>
+
 <body>
 <div class="imgbg">
+   <center><img src="linkedin.jpg"></center> 
+    <h1><center>Registration</center></h1>
   <form action="sec.html" class="form">
      <label for="email"><b>Email</b></label>
     <input type="text" placeholder="Enter Email" name="email" required>
     <label for="psw"><b>Password</b></label>
     <input type="password" placeholder="Enter Password" name="psw" required>
-<button type="submit" class="btn">Login</button>
-  </form>
+<center><button type="submit" class="btn">Login</button>
+   <a href="signin.html">  <button type="submit" class="btn" style="align:right">Signin</button></a> </center>
+        </form>
 </div>
 </body>
 </html>
